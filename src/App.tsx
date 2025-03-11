@@ -96,7 +96,7 @@ function App() {
         <Tab label="Active" value={TabsEnum.active} />
         <Tab label="Completed" value={TabsEnum.completed} />
       </Tabs>
-      <Box display="flex" gap={5} mt={2}>
+      <Box display="flex" gap={5} mt={2} justifyContent="center">
         <Button variant="contained" onClick={removeAll}>
           Remove All
         </Button>
