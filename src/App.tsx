@@ -91,10 +91,10 @@ function App() {
       </Tabs>
       <Box display="flex" gap={5} mt={2}>
         <Button variant="contained" onClick={removeAll}>
-          Очистить все
+          Remove All
         </Button>
         <Button variant="contained" onClick={removeCompleted}>
-          Очистить выполненные
+          Remove completed
         </Button>
       </Box>
       <TaskList tasks={currentTaskList} toggleTask={toggleTask} deleteTask={deleteTask} />
