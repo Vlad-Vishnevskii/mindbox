@@ -33,6 +33,12 @@ function App() {
       setNewTask("");
     }
   };
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      addTask();
+    }
+  };
   
   const addTaskHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewTask(event.target.value)
@@ -77,6 +83,7 @@ function App() {
           fullWidth
           value={newTask}
           onChange={addTaskHandler}
+          onKeyDown={handleKeyDown}
           placeholder="Add task"
           variant="outlined"
         />
